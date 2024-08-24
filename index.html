@@ -1,0 +1,43 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <script type="text/javascript" src="./assets/js/app.js"></script>
+    <title>Decodificador de Textos</title>
+</head>
+<body>
+
+    <aside>
+        <header class=" main-content header-content">
+            <img src="./assets/img/alura_logo.png" alt="logo alura" class="logo">
+        </header>
+    </aside>
+
+    <section class="container-principal section">
+        <div class="main-content grid-one-content">
+
+            <div class=" grid">
+                <div class="coluna-one">
+                    <textarea id="texto-digitado" placeholder="Digite aqui seu texto" class="texto-area"></textarea>
+                    <p><img src="./assets/img/bi_exclamation-circle-fill@2x.png" alt="" class="exclamacao">Apenas letras minusculas e sem acento</p>
+                    <button class="btn-criptografar" onclick="criptografarMensagem()">Criptografar</button>
+                    <button class="btn-descriptografar" onclick="descriptografarMensagem()">Descriptografar</button>
+                </div>
+
+                <div class="coluna-two">
+                    <img src="./assets/img/emAcao.png" alt="ação" class="acao">
+                    <p id="sem-texto"><strong>Nenhuma mensagem encontrada</strong></p>
+                    <p id="texto-conversao">Digite um texto que você deseja Criptografar ou Descriptografar.</p>
+
+                    <div class="bnt-two">
+                        <button class="copiar bnt-two-conf" id="bnt-two-active-copiar" onclick="copiar()">Copiar</button>
+                        <button class="limpar bnt-two-conf" id="bnt-two-active-limpar" onclick="limpar()">Limpar</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>
